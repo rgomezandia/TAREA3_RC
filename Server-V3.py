@@ -7,7 +7,9 @@ if len(sys.argv) != 2:
     print ("Agregar el puerto donde se va a ofrecer el servicio.")
     sys.exit(0)
 
-IP = socket.gethostbyname(socket.gethostname())
+import netifaces as ni
+ni.ifaddresses('ens3')
+IP = ni.ifaddresses('ens3')[ni.AF_INET][0]['addr']
 PUERTO = int(sys.argv[1])
 
 print ("\nServicio se va a configurar en la ip: ",IP," y el puerto: ", PUERTO, " ...")
@@ -43,8 +45,14 @@ try:
                     break
                 
                 lista = recibido.split(" ")
-                dados = int(lista[0])
-                cantidad = int(lista[1])
+                try:
+                    dados = int(lista[1])
+                    cantidad = int(lista[0])
+                except:
+                    print("Usted ingreso algo indebido")
+                    print ("Cerrando el servicio ...")
+                    socket_servidor.close()
+                    print ("Servicio cerrado, Adios!")
                 cadena = ""
                 sumador = 0
                 

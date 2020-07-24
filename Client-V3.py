@@ -23,7 +23,7 @@ except:
     sys.exit(0)
 
 print ("\nConectado, escriba finalizar() para terminar la conección.")
-print ("\nDebe enviar el numero de las caras del dado y la cantidad de dados.\n\n") #solo como referencia
+print ("\nDebe enviar el numero de dado y su cantidad de caras separados por un espacio, ambos hasta 100!!.\n\n") #solo como referencia
 
 try:
     while True:
