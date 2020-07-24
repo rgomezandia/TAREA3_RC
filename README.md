@@ -31,7 +31,7 @@ $ cd TAREA3_RC-master
  $ python3 Server-V3.py "__DirecciónIP__" "__Puerto__"
 ~~~
 
-### Ejecutar Cliente
+### Ejecutar Servidor
 ~~~
  $ python3 Client-V3.py "__Puerto__"
 ~~~
