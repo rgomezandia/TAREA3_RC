@@ -28,10 +28,10 @@ $ cd TAREA3_RC-master
 
 ### Ejecutar Cliente
 ~~~
- $ python3 Server-V3.py "__DirecciónIP__" "__Puerto__"
+ $ python3 Client-V3.py "__DirecciónIP__" "__Puerto__"
 ~~~
 
 ### Ejecutar Servidor
 ~~~
- $ python3 Client-V3.py "__Puerto__"
+ $ python3 Server-V3.py "__Puerto__"
 ~~~
