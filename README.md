@@ -4,7 +4,7 @@
 
 ### Acerca de este Trabajo
 
-Esta es una implementación en Python del Juego de Dados en una aplicación cliente - servidor, donde el cliente envía la cantidad de dados y la cantidad de caras de estos, para obtener la suma resultante
+Esta es una implementación en Python del Juego de Dados en una aplicación cliente - servidor, donde el cliente envía la cantidad de dados y la cantidad de caras de estos, para obtener la suma resultante.
 
 
 ### Parametros del Cliente   
