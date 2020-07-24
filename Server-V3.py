@@ -1,13 +1,13 @@
 import re
 import socket
 import sys
+import netifaces as ni
 from random import randint, uniform, random
 
 if len(sys.argv) != 2:
     print ("Agregar el puerto donde se va a ofrecer el servicio.")
     sys.exit(0)
 
-import netifaces as ni
 ni.ifaddresses('ens3')
 IP = ni.ifaddresses('ens3')[ni.AF_INET][0]['addr']
 PUERTO = int(sys.argv[1])
