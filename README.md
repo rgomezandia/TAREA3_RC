@@ -4,36 +4,29 @@
 
 ### Acerca de este Trabajo
 
-Esta es una implementación en Python del Juego de Dados en una aplicación cliente - servidor, donde el cliente envía la cantidad de dados y la cantidad de caras de estos, para obtener la suma resultante.
-
+Esta es una implementación en Python del el problema de las N-Reinas usando algoritmos genéticos.
 
 ### Parametros del Cliente   
 
-1. __DirecciónIP__ : Este parametro debe ser una dirección de la forma "127.0.0.1"
-2. __Puerto__: Es el puerto por donde establecerá una conexión con el Servidor. Ejemplo: 9090
+1. __semilla__ : numero entero que sirve para generar los numeros aleatorios dentro de python.
+2. __tamTablero__: numero entero que indica el largo o ancho del tablero de ajedrez, si es de 64 espacios, entonces quiere decir que es de 8x8, entonces debe ingresar un 8.
+3. __tanPoblacion__ : numero entero que representa la cantidad de individuos por generacion.
+4. __probCruza__: numero entero del 1 al 100 que representa la probabilidad de que dos individuos se crucen.
+5. __probMutacion__ : numero entero del 1 al 100 que representa la probabilidad de que un individuo mute.
+6. __numIteraciones__: numero entero que representa el numero de generacion.
 
-### Parametros del Servidor   
-
-1. __Puerto__: Es el puerto por donde establecerá una conexión con el Cliente. Ejemplo: 9090
 
 ### Instrucciones para correr el programa en una terminal linux
 
 ~~~
-$ git clone https://github.com/rgomezandia/TAREA3_RC.git
+$ git clone https://github.com/rgomezandia/Projecto-AlgMeta.
 ~~~
 
+
+### Ejecutar Programa
 ~~~
-$ cd TAREA3_RC-master
+ $ python3 NR.py "__semilla__" "__tamTablero__" "__tanPoblacion__" "__probCruza__" "__probMutacion__" "__numIteraciones__"
 ~~~
 
-### Ejecutar Servidor
-~~~
- $ python3 Server-V3.py "__Puerto__"
-~~~
-
-### Ejecutar Cliente
-~~~
- $ python3 Client-V3.py "__DirecciónIP__" "__Puerto__"
-~~~
 
 
